@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* universal reset */
+*,
+*:before,
+*:after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+nav a:link,nav a:visited{
+        color:black
+}
+nav a:hover,nav a:active{
+        color: blue;
+}
+
+
+
+
+#StoryContainer{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    color: orange;
+}
+
+#StoryContainer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 60rem;
+    margin:2rem auto;
+    font-family: "Montserrat", sans-serif;
+    gap: 2rem;
+    font-size: 2rem;
+    
+}  
+
+footer{
+    text-align: center;
+    font-family: "Monserrat", sans-serif;
+    background-color: black;
+    color: antiquewhite;
+    min-height: 7vh;
+    padding: 2rem
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+ h1{
+    text-align: center;
+    padding: 4rem;
+    font-family: "Monserrat", sans-serif;
+ }
+/* art gallery styles */
+
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: "Monserrat", sans-serif;
+}
+
+#cardGallery{
+    gap:2rem;
+}
+
+.cardContainer{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    font-family: "Monserrat", sans-serif;
+    min-height: 40rem;
+    width: 25rem;
+}
+
+#Type{
+    background-image: url("../img/Type.pdf");
+}
+#SocialCause{
+    background-image: url("../img/SocialCause.pdf");
+}
+#ModernType{
+    background-image: url("../img/ModernType.pdf");
+}
+
+
+.cardCopy{
+    flex-direction: column;
+    
+    min-height: 40rem;
+    width: 25rem;
+    color: antiquewhite;
+    background-color: rgba(0,0,0,.7);
+
+    opacity: 0;
+    transition: opacity 1s;
+    text-align:center;
+    flex-wrap:flex;
+}
+
+.cardCopy:hover{
+    opacity: 1;
+    transition: opacity 1s;
+}
